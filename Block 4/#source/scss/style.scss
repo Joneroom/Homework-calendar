@@ -1,0 +1,407 @@
+@import "nullstyle.scss";
+
+$fz:80px;
+$color_1:black;
+$color_2:white;
+
+%shablon1{
+	font-family: Manrope;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 22px;
+
+	color: rgba(255, 255, 255, 0.8);
+}
+
+@mixin z-in-borde-borrad($z,$b,$br){
+	z-index: $z;
+	border: 0px solid #5BBFC8;
+	border-radius: 5px;
+}
+
+
+.wrapper{
+	justify-content: center;
+	display: flex;
+}
+
+.container{
+	max-width: 1535px;
+	max-height: 1795px;
+}
+
+.header {
+
+	// .header__container
+
+	&__container {
+		margin: 83px 138px 102px 142px;
+		max-width: 1255px;
+		max-height: 133px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+
+.title {
+
+	// .title__date
+
+	&__date {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 42px;
+		/* identical to box height */
+		
+		
+		color: #243D6F;
+	}
+
+	// .title__search-icon
+
+	&__search-icon {
+		margin-left: 886px;
+	}
+
+
+	// .title__layout-icon
+
+	&__layout-icon {
+		margin-left: 52px;
+	}
+
+
+	// .title__line
+
+	&__line {
+		margin-top: 88px;
+	}
+}
+
+.search{
+	width: 36px;
+	height: 36px;
+
+}
+
+.layout{
+	width: 36px;
+	height: 36px;
+}
+
+.main {
+
+	// .main__container
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1255px;
+		max-height: 1381px;
+		margin: 0px 140px 96px 140px; 
+	}
+}
+
+
+
+// _______________________ //
+
+.line-time-nine{
+	display: flex;
+}
+
+.line-time-nine span {
+	margin-right: 68px;
+}
+
+.line-time-nine img {
+	margin-top: 5px;
+	height: 2px;
+	width: 1120px;
+}
+
+// _______________________ //
+
+.line-time{
+	display: flex;
+	margin-top: 93px;
+}
+
+.line-time span {
+	margin-right: 68px;
+}
+
+.line-time img {
+	margin-top: 5px;
+	height: 2px;
+	width: 1120px;
+}
+
+// _______________________ //
+
+
+.right-panel {
+
+	// .right-panel__container
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		background: rgba(42, 46, 65, 0.7);
+		max-width: 800px;
+		max-height: 1795px;
+	}
+
+	// .right-panel__month
+
+	&__month {
+
+			font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 42px;
+	/* identical to box height */
+
+	text-align: center;
+
+		color: #FFFFFF;
+
+		// margin: 84px 240px 85px 240px;
+		margin: 84px 102px 22px 99px;
+	}
+
+	// .right-panel__line
+
+	&__line {
+	}
+
+
+	// .right-panel__day
+
+	&__day {
+
+	}
+
+
+	// .right-panel__categories
+
+	&__categories {
+		display: flex;
+		flex-direction: column;
+		max-width: 599px;
+		max-height: 372px;
+		margin: 76px 102px 341px 99px;
+	}
+}
+
+.days{
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 30px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.6;
+
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.days li{
+	width: 86px;
+height: 31px;
+	margin-right: 10px;
+}
+
+.number-day {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 29px;
+line-height: 34px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+	justify-content: center;
+	margin-top: 48px;
+	display: flex;
+	flex-direction: row;
+}
+
+.number-day li{
+	width: 86px;
+height: 34px;
+
+	margin-right: 10px;
+}
+
+.grey-number{
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+
+.line-black {
+	width: 599px;
+	height: 2px;
+	margin-top: 85px;
+}
+
+
+.categories{
+
+	// .categories__text
+
+	&__text {
+		margin-top: 107px;
+		width: 183px;
+		height: 31px;
+		
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 30px;
+		/* identical to box height */
+		
+		
+		color: #FFFFFF;
+	}
+
+// .categories__finance
+
+	&__finance {
+		margin-top: 80px;
+	}
+
+	// .categories__management
+
+	&__management {
+		margin-top: -27px;
+		margin-left: 300px;
+
+	}
+	// .categories__design
+
+	&__design {
+	margin-top: 100px;
+	}
+}
+
+
+
+.finance{
+	margin-top: 100px;
+
+padding: 26px 90px 26px 90px ;
+	
+	box-sizing: border-box;
+	background: #8576ED;
+	border-radius: 12px;
+
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+
+box-shadow: 0 5px 0px #3c354a;
+transition-duration: 500ms;
+
+}
+
+.finance:hover{
+	top: 2px;
+box-shadow: 0 3px 0px #3c354a;
+background-color: #1facd9;
+}
+
+.management{
+
+	padding: 26px 53px 28px 65px ;
+		
+		box-sizing: border-box;
+	background: #8576ED;
+		border-radius: 12px;
+	
+		font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	/* identical to box height */
+	
+	text-align: center;
+	
+	background: #F39946;
+	color: #FFFFFF;
+
+	box-shadow: 0 5px 0px #3c354a;
+	transition-duration: 500ms;
+	
+}
+
+.management:hover{
+	top: 2px;
+box-shadow: 0 3px 0px #3c354a;
+background-color: #ffa125;
+}
+
+.design{
+padding: 26px 90px 26px 104px ;
+	
+	box-sizing: border-box;
+	background: #FF467E;
+	border-radius: 12px;
+
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+transition-property: all;
+transition-duration: 0.5s;
+transition-delay: 0s;
+transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+
+box-shadow: 0 5px 0px #3c354a;
+
+}
+
+.design:hover{
+	padding: 26px 110px 26px 124px ;
+
+
+}
