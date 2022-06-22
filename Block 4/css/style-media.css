@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .right-panel__month {
+    margin: 20px 0px 0px 0px;
+    font-size: 25px;
+  }
+
+  .line-black {
+    margin-top: 20px;
+    width: 299px;
+  }
+
+  .days {
+    font-size: 19px;
+  }
+
+  .number-day {
+    font-size: 16px;
+  }
+
+  .right-panel__categories {
+    margin: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .categories__text {
+    margin-top: 38px;
+    font-size: 25px;
+  }
+
+  .categories__finance {
+    margin-left: -178px;
+    margin-top: 60px;
+  }
+
+  .finance {
+    padding: 16px 30px 16px 30px;
+    font-size: 16px;
+  }
+
+  .categories__management {
+    margin-left: 142px;
+  }
+
+  .management {
+    padding: 16px 30px 16px 30px;
+    font-size: 16px;
+  }
+
+  .categories__design {
+    margin-bottom: 50px;
+    margin-top: 57px;
+    margin-left: -178px;
+  }
+
+  .design {
+    padding: 16px 30px 16px 30px;
+    font-size: 16px;
+  }
+
+  .header__container {
+    margin: 0px;
+  }
+
+  .title__date {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+
+  .search {
+    width: 25px;
+    height: 25px;
+  }
+
+  .layout {
+    width: 25px;
+    height: 25px;
+  }
+
+  .title__search-icon {
+    margin: 0px 190px 0px 37px;
+  }
+
+  .title__layout-icon {
+    margin: 0px;
+  }
+
+  .title__line {
+    margin-top: 50px;
+  }
+
+  .title__line img {
+    margin-left: 10px;
+    width: 299px;
+  }
+
+  .main__container {
+    margin: 200px 0px 0px 20px;
+  }
+
+  .line-time-nine span {
+    margin-right: 20px;
+  }
+
+  .line-time-nine img {
+    width: 235px;
+  }
+
+  .line-time span {
+    margin-right: 20px;
+  }
+
+  .line-time img {
+    width: 235px;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .categories__finance {
+    margin-left: -220px;
+  }
+
+  .categories__management {
+    margin-left: 160px;
+  }
+
+  .categories__design {
+    margin-left: -220px;
+  }
+
+  .title__date {
+    font-size: 28px;
+    margin-left: 120px;
+  }
+
+  .search {
+    width: 30px;
+    height: 30px;
+  }
+
+  .layout {
+    width: 30px;
+    height: 30px;
+  }
+
+  .title__search-icon {
+    margin-left: 80px;
+  }
+
+  .title__line {
+    margin-left: 50px;
+  }
+
+  .line-time-nine span {
+    margin-right: 45px;
+  }
+
+  .line-time span {
+    margin-right: 45px;
+  }
+}
