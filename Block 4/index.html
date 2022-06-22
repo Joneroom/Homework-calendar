@@ -7,7 +7,7 @@
 		<!-- Заголовок страницы в браузере -->
 		<title>Привет SASS(SCSS)!</title>
 		<!-- Подключаем CSS -->
-
+		<!-- <link rel="stylesheet" href="css/style-media.css"> -->
 		<link rel="stylesheet" href="css/style-global-header.css">
 		<link rel="stylesheet" href="css/style-left-panel.css">
 		<link rel="stylesheet" href="css/style-right-panel.css">
@@ -20,6 +20,169 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
+		<style>
+@media (min-width: 320px) and (max-width: 767px) {
+	.wrapper {
+		flex-direction: column-reverse;
+	}
+	.right-panel__month{
+		margin: 20px 0px 0px 0px;
+		font-size: 25px;
+	}
+	.line-black{
+		margin-top: 20px;
+		width: 299px;
+	}
+	.days{
+		font-size: 19px;
+	}
+	.number-day{
+		font-size: 16px;
+	}
+	.right-panel__categories{
+		margin: 0px;
+		align-items: center;
+	}
+
+	.categories__text{
+		margin-top: 38px;
+		font-size: 25px;
+	}
+
+	.categories__finance{
+		margin-left: -178px;
+		margin-top: 60px;
+	}
+
+	.finance{
+		padding: 16px 30px 16px 30px;
+		font-size: 16px;
+	}
+
+	.categories__management{
+		margin-left: 142px;
+	}
+
+	.management{
+		padding: 16px 30px 16px 30px;
+		font-size: 16px;
+	}
+
+	.categories__design{
+		margin-bottom: 50px;
+		margin-top: 57px;
+		margin-left: -178px;
+	}
+
+	.design{
+		padding: 16px 30px 16px 30px;
+		font-size: 16px;
+	}
+
+	.header__container{
+		margin: 0px;
+	}
+	
+	.title__date{
+		font-size: 28px;
+		margin-top: 50px;
+		margin-left: 70px;
+		margin-bottom: 50px;
+	}
+
+	.search{
+		width: 25px;
+		height: 25px;
+	}
+
+	.layout{
+		width: 25px;
+		height: 25px;
+	}
+
+	.title__search-icon{
+		margin: 0px 190px 0px 37px;
+	}
+	.title__layout-icon{
+		margin: 0px;
+	}
+
+	.title__line{
+		margin-top: 50px;
+	}
+
+	.title__line img{
+		margin-left: 10px;
+		width: 299px;
+	}
+
+	.main__container{
+		margin: 200px 0px 0px 20px;
+	}
+
+
+
+	.line-time-nine span{
+	margin-right: 20px;
+	}
+
+	.line-time-nine img{
+		width: 235px;
+	}
+
+	.line-time span{
+		margin-right: 20px;
+		}
+	
+	.line-time img{
+		width: 235px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.categories__finance{
+		margin-left: -220px;
+	}
+	.categories__management{
+		margin-left: 160px;
+	}
+
+	.categories__design{
+		margin-left: -220px;
+	}
+
+	.title__date{
+		font-size: 28px;
+		margin-left: 120px;
+	}
+
+	.search{
+		width: 30px;
+		height: 30px;
+	}
+
+	.layout{
+		width: 30px;
+		height: 30px;
+	}
+
+	.title__search-icon{
+		margin-left: 80px;
+	}
+
+	.title__line{
+		margin-left: 50px;
+	}
+
+	.line-time-nine span{
+		margin-right: 45px;
+	}
+
+	.line-time span{
+		margin-right: 45px;
+	}
+}
+		</style>
 		<div class="wrapper">
 			<div class="left-panel">
 				<header class="header">
@@ -155,6 +318,7 @@
 					<div class="categories__design"><a href="#" class="design">DESIGN</a></div>
 				</div>
 			</div>
+			<div class="first block"></div>
 		</div>
 	</body>
 </html>
